@@ -25,9 +25,9 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     const token = getAuthToken();
     if (token) {
       setUser({ 
-        email: 'user@example.com', 
-        name: 'John Doe',
-        avatar: 'https://ui-avatars.com/api/?name=John+Doe&background=FF6B35&color=fff'
+        email: 'imranance99@gmail.com', 
+        name: 'Imran Shaikh',
+        avatar: 'https://ui-avatars.com/api/?name=Imran+Shaikh&background=FF6B35&color=fff'
       });
     }
     setLoading(false);
@@ -39,13 +39,13 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       const mockApiCall = (): Promise<{ token: string; user: User }> => 
         new Promise((resolve, reject) => {
           setTimeout(() => {
-            if (email === 'user@example.com' && password === 'password123') {
+            if (email === 'imranance99@gmail.com' && password === 'Imran@123') {
               resolve({
                 token: 'mock-jwt-token-' + Date.now(),
                 user: { 
                   email, 
-                  name: 'John Doe',
-                  avatar: 'https://ui-avatars.com/api/?name=John+Doe&background=FF6B35&color=fff'
+                  name: 'Imran Shaikh',
+                  avatar: 'https://ui-avatars.com/api/?name=Imran+Shaikh&background=FF6B35&color=fff'
                 }
               });
             } else {
